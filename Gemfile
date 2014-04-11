@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
-gem 'mysql2'
+#gem 'mysql2'
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -30,21 +30,29 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'forem', :github => "radar/forem", :branch => "rails4"
 gem 'kaminari', '0.15.1'
-gem 'forem-theme-orange', :git => "git://github.com/radar/forem-theme-orange.git"
-gem 'forem-theme-twist', :git => "git://github.com/radar/forem-theme-twist.git"
+#gem 'forem-theme-orange', :git => "git://github.com/radar/forem-theme-orange.git"
+#gem 'forem-theme-twist', :git => "git://github.com/radar/forem-theme-twist.git"
 gem 'forem-bootstrap', :github => "radar/forem-bootstrap"
 
 
 gem 'cancan'
 gem 'devise', "3.0.0rc"
-group :doc do
+group :production do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'thin'
 end
 
 gem 'country_select'
 gem 'bootstrap-sass'
 gem 'rails_layout'
+gem 'sqlite3'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

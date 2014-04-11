@@ -22171,3 +22171,2120 @@ Started GET "/assets/forem-bootstrap.css?body=1" for 127.0.0.1 at 2014-03-28 17:
 
 
 Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-03-28 17:13:33 +0530
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-07 10:03:24 -0700
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+  mysql2 (0.3.15) lib/mysql2/client.rb:67:in `connect'
+  mysql2 (0.3.15) lib/mysql2/client.rb:67:in `initialize'
+  activerecord (4.0.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.3) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.3) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.3) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.3) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.3) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.3) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__2158187026441320880__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.8ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-07 10:07:01 -0700
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+  mysql2 (0.3.15) lib/mysql2/client.rb:67:in `connect'
+  mysql2 (0.3.15) lib/mysql2/client.rb:67:in `initialize'
+  activerecord (4.0.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.3) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.3) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.3) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.3) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.3) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.3) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__845257945387956653__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.5ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-07 11:43:52 -0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.3) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.3) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__3743722663742164826__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.8ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+  [1m[36m (14.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCategories (20140303105843)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140303105843"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateJobs (20140303105955)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stage" varchar(255), "category" varchar(255), "country" varchar(255), "start_date" date, "end_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140303105955"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateJobEmails (20140303110020)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "job_emails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "job_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140303110020"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateForemForums (20140314132511)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "forem_forums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132511"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateForemTopics (20140314132512)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "forem_topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forum_id" integer, "user_id" integer, "subject" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132512"]]
+  [1m[36m (40.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateForemPosts (20140314132513)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "forem_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "topic_id" integer, "text" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132513"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddReplyToToForemPosts (20140314132514)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (44.0ms)[0m  [1mALTER TABLE "forem_posts" ADD "reply_to_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132514"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddLockedToForemTopics (20140314132515)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "forem_topics" ADD "locked" boolean DEFAULT 'f' NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132515"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddPinnedToForemTopics (20140314132516)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "forem_topics" ADD "pinned" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132516"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddForemViews (20140314132517)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "forem_views" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "topic_id" integer, "created_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132517"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddUpdatedAtAndCountToForemViews (20140314132518)
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "forem_views" ADD "updated_at" datetime[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "forem_views" ADD "count" integer DEFAULT 0
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132518"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddHiddenToForemTopics (20140314132519)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "forem_topics" ADD "hidden" boolean DEFAULT 'f'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132519"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to AddIndexesToTopicsPostsViews (20140314132520)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_forem_topics_on_forum_id" ON "forem_topics" ("forum_id")
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_forem_topics_on_user_id" ON "forem_topics" ("user_id")[0m
+  [1m[35m (1.7ms)[0m  CREATE INDEX "index_forem_posts_on_topic_id" ON "forem_posts" ("topic_id")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_forem_posts_on_user_id" ON "forem_posts" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_forem_posts_on_reply_to_id" ON "forem_posts" ("reply_to_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_forem_views_on_user_id" ON "forem_views" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_forem_views_on_topic_id" ON "forem_views" ("topic_id")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_forem_views_on_updated_at" ON "forem_views" ("updated_at")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132520"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateForemCategories (20140314132521)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "forem_categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132521"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddCategoryIdToForums (20140314132522)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "forem_forums" ADD "category_id" integer[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "forem_forums"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132522"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateForemSubscriptions (20140314132523)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "forem_subscriptions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subscriber_id" integer, "topic_id" integer) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132523"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to AddPendingReviewToForemPosts (20140314132524)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "forem_posts" ADD "pending_review" boolean DEFAULT 't'
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "forem_posts" SET "pending_review" = 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132524"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddPendingReviewToForemTopics (20140314132525)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "forem_topics" ADD "pending_review" boolean DEFAULT 't'[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "forem_topics" SET "pending_review" = 'f'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132525"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to AddForemTopicsLastPostAt (20140314132526)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "forem_topics" ADD "last_post_at" datetime
+  [1m[36mForem::Topic Load (0.1ms)[0m  [1mSELECT "forem_topics".* FROM "forem_topics" ORDER BY "forem_topics"."id" ASC LIMIT 1000[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132526"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateForemGroups (20140314132527)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "forem_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_forem_groups_on_name" ON "forem_groups" ("name")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132527"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreateForemMemberships (20140314132528)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "forem_memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_id" integer, "member_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_forem_memberships_on_group_id" ON "forem_memberships" ("group_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132528"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateForemModeratorGroups (20140314132529)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "forem_moderator_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forum_id" integer, "group_id" integer) [0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_forem_moderator_groups_on_forum_id" ON "forem_moderator_groups" ("forum_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132529"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Migrating to RemovePendingReviewAddStateToForemPosts (20140314132530)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TEMPORARY TABLE "aforem_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "topic_id" integer, "text" text, "user_id" integer, "created_at" datetime, "updated_at" datetime, "reply_to_id" integer, "pending_review" boolean DEFAULT 't') 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_aforem_posts_on_reply_to_id" ON "aforem_posts" ("reply_to_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_aforem_posts_on_user_id" ON "aforem_posts" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_aforem_posts_on_topic_id" ON "aforem_posts" ("topic_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "forem_posts"
+  [1m[36m (13.5ms)[0m  [1mDROP TABLE "forem_posts"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "forem_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "topic_id" integer, "text" text, "user_id" integer, "created_at" datetime, "updated_at" datetime, "reply_to_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_forem_posts_on_topic_id" ON "forem_posts" ("topic_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_forem_posts_on_user_id" ON "forem_posts" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_forem_posts_on_reply_to_id" ON "forem_posts" ("reply_to_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aforem_posts"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "aforem_posts"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "forem_posts" ADD "state" varchar(255) DEFAULT 'pending_review'
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_forem_posts_on_state" ON "forem_posts" ("state")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132530"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Migrating to RemovePendingReviewFromForemTopicsAddState (20140314132531)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "aforem_topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forum_id" integer, "user_id" integer, "subject" varchar(255), "created_at" datetime, "updated_at" datetime, "locked" boolean DEFAULT 'f' NOT NULL, "pinned" boolean DEFAULT 'f', "hidden" boolean DEFAULT 'f', "pending_review" boolean DEFAULT 't', "last_post_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_aforem_topics_on_user_id" ON "aforem_topics" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_aforem_topics_on_forum_id" ON "aforem_topics" ("forum_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "forem_topics"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "forem_topics"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "forem_topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forum_id" integer, "user_id" integer, "subject" varchar(255), "created_at" datetime, "updated_at" datetime, "locked" boolean DEFAULT 'f' NOT NULL, "pinned" boolean DEFAULT 'f', "hidden" boolean DEFAULT 'f', "last_post_at" datetime) 
+  [1m[36m (0.4ms)[0m  [1mCREATE INDEX "index_forem_topics_on_forum_id" ON "forem_topics" ("forum_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_forem_topics_on_user_id" ON "forem_topics" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aforem_topics"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aforem_topics"
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "forem_topics" ADD "state" varchar(255) DEFAULT 'pending_review'[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_forem_topics_on_state" ON "forem_topics" ("state")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132531"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Migrating to ApproveAllTopicsAndPosts (20140314132532)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "forem_topics" SET "state" = 'approved'
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "forem_posts" SET "state" = 'approved'[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132532"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddNotifiedToForemPosts (20140314132533)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "forem_posts" ADD "notified" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132533"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Migrating to MakeForemViewsPolymorphic (20140314132534)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "aforem_views" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "viewable_id" integer, "created_at" datetime, "updated_at" datetime, "count" integer DEFAULT 0) [0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "tindex_aforem_views_on_updated_at" ON "aforem_views" ("updated_at")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "tindex_aforem_views_on_topic_id" ON "aforem_views" ("viewable_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_aforem_views_on_user_id" ON "aforem_views" ("user_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "forem_views"[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "forem_views"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "forem_views" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "viewable_id" integer, "created_at" datetime, "updated_at" datetime, "count" integer DEFAULT 0) [0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_forem_views_on_user_id" ON "forem_views" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_forem_views_on_topic_id" ON "forem_views" ("viewable_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_forem_views_on_updated_at" ON "forem_views" ("updated_at")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aforem_views"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aforem_views"
+  [1m[36m (0.3ms)[0m  [1mDROP INDEX "index_forem_views_on_topic_id"[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_forem_views_on_viewable_id" ON "forem_views" ("viewable_id")
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "forem_views" ADD "viewable_type" varchar(255)[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "forem_views" SET viewable_type='Forem::Topic'
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132534"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Migrating to AddForemViewFields (20140314132535)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "forem_views" ADD "current_viewed_at" datetime
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "forem_views" ADD "past_viewed_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "forem_topics" ADD "views_count" integer DEFAULT 0
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "forem_forums" ADD "views_count" integer DEFAULT 0[0m
+  [1m[35mForem::Topic Load (0.1ms)[0m  SELECT "forem_topics".* FROM "forem_topics" ORDER BY "forem_topics"."id" ASC LIMIT 1000
+Scoped order and limit are ignored, it's forced to be batch order and batch size
+  [1m[36mForem::Forum Load (0.1ms)[0m  [1mSELECT "forem_forums".* FROM "forem_forums" ORDER BY "forem_forums"."id" ASC LIMIT 1000[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132535"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddForemAdmin (20140314132536)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddForemAdmin (20140314132536)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140317084813"]]
+  [1m[36m (13.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddForemAdmin (20140314132536)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "forem_admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132536"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddForemState (20140314132537)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "forem_state" varchar(255) DEFAULT 'pending_review'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132537"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddForemAutoSubscribe (20140314132538)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" ADD "forem_auto_subscribe" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132538"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddFriendlyIdSlugs (20140314132539)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "forem_forums" ADD "slug" varchar(255)[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "index_forem_forums_on_slug" ON "forem_forums" ("slug")
+Scoped order and limit are ignored, it's forced to be batch order and batch size
+  [1m[36mForem::Forum Load (0.1ms)[0m  [1mSELECT "forem_forums".* FROM "forem_forums" ORDER BY "forem_forums"."id" ASC LIMIT 1000[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "forem_categories" ADD "slug" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_forem_categories_on_slug" ON "forem_categories" ("slug")[0m
+  [1m[35mForem::Category Load (0.1ms)[0m  SELECT "forem_categories".* FROM "forem_categories" ORDER BY "forem_categories"."id" ASC LIMIT 1000
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "forem_topics" ADD "slug" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_forem_topics_on_slug" ON "forem_topics" ("slug")
+  [1m[36mForem::Topic Load (0.1ms)[0m  [1mSELECT "forem_topics".* FROM "forem_topics" ORDER BY "forem_topics"."id" ASC LIMIT 1000[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140314132539"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Migrating to RenameTitleToNameOnForemForums (20140314132540)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "aforem_forums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "category_id" integer, "views_count" integer DEFAULT 0, "slug" varchar(255)) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "tindex_aforem_forums_on_slug" ON "aforem_forums" ("slug")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "forem_forums"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "forem_forums"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "forem_forums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "category_id" integer, "views_count" integer DEFAULT 0, "slug" varchar(255)) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_forem_forums_on_slug" ON "forem_forums" ("slug")
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aforem_forums"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "aforem_forums"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140314132540"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddRoleToUsers (20140317092902)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "role" varchar(255)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140317092902"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-07 12:12:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (0.5ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (349.9ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (356.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1692ms (Views: 1574.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:14 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-07 12:12:15 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-07 12:12:16 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-07 12:12:17 -0700
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-04-07 12:13:28 -0700
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xTutsKICt2kW5jzzcDSE3FZXRBH813aYCLWN9CoPPFE=", "job"=>{"name"=>"Megh", "email"=>"skyspeak@gmail.com", "stage"=>"Stage3", "category"=>"Category1", "country"=>"United Kingdom", "start_date"=>"2013-02-04", "end_date"=>""}, "commit"=>"Submit"}
+Unpermitted parameters: email
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (209.2ms)[0m  [1mINSERT INTO "jobs" ("category", "country", "created_at", "name", "stage", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Category1"], ["country", "United Kingdom"], ["created_at", Mon, 07 Apr 2014 19:13:28 UTC +00:00], ["name", "Megh"], ["stage", "Stage3"], ["start_date", Mon, 04 Feb 2013], ["updated_at", Mon, 07 Apr 2014 19:13:28 UTC +00:00]]
+  [1m[35m (11.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "job_emails" ("created_at", "email", "job_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 07 Apr 2014 19:13:28 UTC +00:00], ["email", "skyspeak@gmail.com"], ["job_id", 1], ["updated_at", Mon, 07 Apr 2014 19:13:28 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 298ms (ActiveRecord: 224.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-07 12:13:28 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (14.5ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (16.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 59.9ms | ActiveRecord: 0.9ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:21:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (26.6ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (442.4ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (535.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1386ms (Views: 1238.6ms | ActiveRecord: 27.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:36 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:21:37 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:21:38 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 13:21:39 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 13:21:40 -0700
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:36:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (28.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (15.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (355.6ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (375.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1198ms (Views: 906.8ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:09 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:36:10 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:36:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (16.3ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (18.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 81ms (Views: 47.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:36:13 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:36:14 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:36:14 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 13:36:15 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 13:36:16 -0700
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-04-11 13:36:48 -0700
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrKulIikly1OWd2sf+Ap6s5cKmOdQ1a2g/+BuwtCbAs=", "job"=>{"name"=>"Test User", "email"=>"testuser2@gmail.com", "stage"=>"Stage1", "category"=>"EB 1", "country"=>"Albania", "start_date"=>"2013-02-04", "end_date"=>""}, "commit"=>"Submit"}
+Unpermitted parameters: email
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (123.3ms)[0m  [1mINSERT INTO "jobs" ("category", "country", "created_at", "name", "stage", "start_date", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["category", "EB 1"], ["country", "Albania"], ["created_at", Fri, 11 Apr 2014 20:36:48 UTC +00:00], ["name", "Test User"], ["stage", "Stage1"], ["start_date", Mon, 04 Feb 2013], ["updated_at", Fri, 11 Apr 2014 20:36:48 UTC +00:00]]
+  [1m[35m (317.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (22.5ms)[0m  INSERT INTO "job_emails" ("created_at", "email", "job_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 11 Apr 2014 20:36:48 UTC +00:00], ["email", "testuser2@gmail.com"], ["job_id", 2], ["updated_at", Fri, 11 Apr 2014 20:36:48 UTC +00:00]]
+  [1m[36m (76.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 595ms (ActiveRecord: 539.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:36:48 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (14.9ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (31.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 86.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 13:36:49 -0700
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/mgautam/appdir/self-serve-new/config/routes.rb:9)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:46:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (22.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (15.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (345.9ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (375.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1685ms (Views: 972.1ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:46:59 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 13:47:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (15.3ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (16.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 26.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:48:21 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:48:22 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:48:22 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:48:22 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:48:22 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 13:48:22 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 13:48:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 13:48:33 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (14.7ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (15.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 13:48:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 14:37:36 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (36.8ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (44.2ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (62.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 268ms (Views: 207.4ms | ActiveRecord: 37.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:37 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 14:37:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (18.8ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (29.7ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (40.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 139ms (Views: 110.6ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 14:39:36 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 14:39:37 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 14:39:37 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 14:39:37 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 14:39:37 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 14:39:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (9.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (15.2ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (26.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 128ms (Views: 92.6ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 14:44:51 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 14:44:52 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 14:44:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 14:48:23 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (9.5ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (14.3ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (25.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 149ms (Views: 90.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 14:48:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+Processing by JobsController#new as HTML
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:23)
+  [1m[35mJob Load (10.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:24)
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:25)
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:26)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "jobs"
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:30)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage1'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:31)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage2'
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:32)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage3'[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from new at /Users/mgautam/appdir/self-serve-new/app/controllers/jobs_controller.rb:33)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."stage" = 'Stage4'
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/_form.html.erb (16.3ms)
+  Rendered jobs/new.html.erb within layouts/homelayout (19.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 59.8ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/skel-noscript.css?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/forem.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/config.js" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/skel.min.js" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/jquery.dropotron.min.js" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/skel-panels.min.js" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/Chart.js" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/arrowleft.png" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bg02.png" for 127.0.0.1 at 2014-04-11 14:50:59 -0700
+
+
+Started GET "/assets/bg01.png" for 127.0.0.1 at 2014-04-11 14:50:59 -0700

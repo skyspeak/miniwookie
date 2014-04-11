@@ -31,19 +31,19 @@
 	      <div class="form-group">
 		     <%= f.label 'Your stage'%>
                  <input type="radio" name="job[stage]" id="job_stage" value="Stage1" checked="checked">
-			      1
+			      Labor
 			      <input type="radio" name="job[stage]" id="job_stage" value="Stage2">
-			      2
+			      I-140
 			      <input type="radio" name="job[stage]" id="job_stage" value="Stage3">
-			      3
+			      I-485
 			      <input type="radio" name="job[stage]" id="job_stage" value="Stage4">
-			      4
+			      Green Card
 		     <span style="display:none;" class="error">Please provide a stage. </span>
 		  </div>
 	      
 	      <div class="form-group">
 	           <%= f.label 'Your category' %>
-		       <label><%= f.select :category, options_for_select({ "1" => "Category1", "2" => "Category2" , "3" => "Category3"}), {prompt: "Select a Category"},{class: "form-control",:style => "width:200px;"} %></label>
+		       <label><%= f.select :category, options_for_select({ "1" => "EB 1", "2" => "EB 2" , "3" => "EB 3"}), {prompt: "Select a Category"},{class: "form-control",:style => "width:200px;"} %></label>
 		  </div>
 	      
 	       <div class="form-group">

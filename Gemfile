@@ -47,7 +47,7 @@ end
 gem 'country_select'
 gem 'bootstrap-sass'
 gem 'rails_layout'
-gem 'sqlite3'
+
 gem 'figaro'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
